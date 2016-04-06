@@ -21,13 +21,13 @@ public class Deque<T> {
     public T removeFront()
     {
 	//implementation
-	return "";
+	return (T) new Object();
     }
 
     public T removeEnd()
     {
 	//implementation
-	return "";
+	return (T) new Object();
     }
 
     public T peekFront()

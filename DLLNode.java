@@ -5,20 +5,20 @@
 
 public class DLLNode<T> {
 
-    private T _cargo;    //cargo may only be of type T
+    private T _value;    //cargo may only be of type T
     private DLLNode<T> _nextNode, _prevNode; //pointers to next, prev DLLNodes
 
 
     // constructor -- initializes instance vars
     public DLLNode( T value, DLLNode<T> prev, DLLNode<T> next ) {
-	_cargo = value;
+	_value = value;
 	_nextNode = next;
 	_prevNode = prev;
     }
 
 
     //--------------v  ACCESSORS  v--------------
-    public T getCargo() { return _cargo; }
+    public T getValue() { return _value; }
 
     public DLLNode<T> getNext() { return _nextNode; }
 
@@ -27,9 +27,9 @@ public class DLLNode<T> {
 
 
     //--------------v  MUTATORS  v--------------
-    public T setCargo( T newCargo ) {
-	T foo = getCargo();
-	_cargo = newCargo;
+    public T setValue( T newVal ) {
+	T foo = getValue();
+	_value = newVal;
 	return foo;
     }
 
@@ -48,7 +48,7 @@ public class DLLNode<T> {
 
 
     // override inherited toString
-    public String toString() { return _cargo.toString(); }
+    public String toString() { return _value.toString(); }
 
 
     //main method for testing
